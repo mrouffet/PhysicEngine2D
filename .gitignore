@@ -365,8 +365,8 @@ About
 
 
 # Binaries
-Build/
-Build*/
+PhysicEngine/Build/
+PhysicEngine/Build*/
 
 Intermediate/
 
