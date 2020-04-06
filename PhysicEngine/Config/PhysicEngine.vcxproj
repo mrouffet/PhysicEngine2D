@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DDA640D5-1CD6-4178-8DFD-EBCFCBBB0D60}</ProjectGuid>
+    <RootNamespace>PhysicEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Configuration)_32\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediate\$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Build\$(Configuration)_32\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediate\$(Configuration)_32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)\Build\$(Configuration)_64\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediate\$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\Build\$(Configuration)_64\</OutDir>
+    <IntDir>$(SolutionDir)\Intermediate\$(Configuration)_64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Headers;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\include;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\src;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>PE_DEBUG;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\Debug;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\lib\x86;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glut;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libdrawtext.lib;SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Bin\*" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\SDL2-2.0.3\lib\x86\SDL2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\glew\bin\Release\Win32\glew32.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Headers;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\include;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\src;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\Debug;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glut;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\lib\x64;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libdrawtext.lib;SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Bin\*" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\SDL2-2.0.3\lib\x64\SDL2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\glew\bin\Release\x64\glew32.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Headers;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\include;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\src;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\Debug;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\lib\x86;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glut;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\lib\Release\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libdrawtext.lib;SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Bin\*" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\SDL2-2.0.3\lib\x86\SDL2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\glew\bin\Release\Win32\glew32.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Headers;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\include;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\src;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\libdrawtext-0.2.1\Debug;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glut;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\SDL2-2.0.3\lib\x64;D:\Users\m.rouffet\Projects\Visual Studio\PhysicEngine\PhysicEngine\Libs\glew\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libdrawtext.lib;SDL2.lib;SDL2main.lib;glew32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Bin\*" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\SDL2-2.0.3\lib\x64\SDL2.dll" "$(TargetDir)"
+copy /Y "$(SolutionDir)Libs\glew\bin\Release\x64\glew32.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sources\Core\Chrono.cpp" />
+    <ClCompile Include="..\Sources\Core\Debug.cpp" />
+    <ClCompile Include="..\Sources\Core\Random.cpp" />
+    <ClCompile Include="..\Sources\main.cpp" />
+    <ClCompile Include="..\Sources\Maths\AABB.cpp" />
+    <ClCompile Include="..\Sources\Maths\Algorithms.cpp" />
+    <ClCompile Include="..\Sources\Maths\Mat2.cpp" />
+    <ClCompile Include="..\Sources\Maths\Shapes\RandomShape.cpp" />
+    <ClCompile Include="..\Sources\Maths\Shapes\Rectangle.cpp" />
+    <ClCompile Include="..\Sources\Maths\Shapes\Shape.cpp" />
+    <ClCompile Include="..\Sources\Maths\Shapes\Circle.cpp" />
+    <ClCompile Include="..\Sources\Maths\Shapes\Square.cpp" />
+    <ClCompile Include="..\Sources\Maths\Shapes\Triangle.cpp" />
+    <ClCompile Include="..\Sources\Maths\Transform.cpp" />
+    <ClCompile Include="..\Sources\Maths\Vec2.cpp" />
+    <ClCompile Include="..\Sources\Renderer\Window.cpp" />
+    <ClCompile Include="..\Sources\SDK\Engine.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\BroadPhases\DynamicAABBTree.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\BroadPhases\DynamicAABBTree_BP.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\BroadPhases\SweepAndPrune_BP.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\CollisionInfos.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\NarrowPhases\GJK_NP.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\NarrowPhases\INarrowPhase.cpp" />
+    <ClCompile Include="..\Sources\SDK\Physics\NarrowPhases\SAT_NP.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Behaviors\PolygonMover.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Behaviors\ScrollScale.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Behaviors\TriangleSpawner.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Component.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\AABBComponent.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\BodyBase.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\DynamicBody.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\DynamicBodyColor.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\StaticBody.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Ortho\DebugText.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Ortho\RenderOrtho.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Ortho\RenderText.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Persp\DebugPersp.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Persp\RenderPersp.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Persp\RenderShape.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Components\ShapeComponent.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneBigShapeComplex.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneBigShapeSimple.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneBouncingPoly.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneDebugCollision.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneCircles.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneTower.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\GameObj.cpp" />
+    <ClCompile Include="..\Sources\SDK\Scene\SceneBase.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\Infos\PhysicSystemInfos.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\Infos\RenderSystemInfos.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\Infos\SceneSystemInfos.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\InputSystem.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\PhysicSystem.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\RenderSystem.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\SceneSystem.cpp" />
+    <ClCompile Include="..\Sources\SDK\Systems\SystemBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Headers\Core\Chrono.hpp" />
+    <ClInclude Include="..\Headers\Core\Color.hpp" />
+    <ClInclude Include="..\Headers\Core\Config.hpp" />
+    <ClInclude Include="..\Headers\Core\Debug.hpp" />
+    <ClInclude Include="..\Headers\Core\FPS.hpp" />
+    <ClInclude Include="..\Headers\Core\Key.hpp" />
+    <ClInclude Include="..\Headers\Core\Pair.hpp" />
+    <ClInclude Include="..\Headers\Core\Random.hpp" />
+    <ClInclude Include="..\Headers\Maths\AABB.hpp" />
+    <ClInclude Include="..\Headers\Maths\Algorithms.hpp" />
+    <ClInclude Include="..\Headers\Maths\Hull.hpp" />
+    <ClInclude Include="..\Headers\Maths\Mat2.hpp" />
+    <ClInclude Include="..\Headers\Maths\Shapes\RandomShape.hpp" />
+    <ClInclude Include="..\Headers\Maths\Shapes\Rectangle.hpp" />
+    <ClInclude Include="..\Headers\Maths\Shapes\Shape.hpp" />
+    <ClInclude Include="..\Headers\Maths\Shapes\Circle.hpp" />
+    <ClInclude Include="..\Headers\Maths\Shapes\Square.hpp" />
+    <ClInclude Include="..\Headers\Maths\Shapes\Triangle.hpp" />
+    <ClInclude Include="..\Headers\Maths\Transform.hpp" />
+    <ClInclude Include="..\Headers\Maths\Vec2.hpp" />
+    <ClInclude Include="..\Headers\Physics\Forces\ForceConstraints.hpp" />
+    <ClInclude Include="..\Headers\Physics\Forces\ForceInfos.hpp" />
+    <ClInclude Include="..\Headers\Physics\Forces\ForceMode.hpp" />
+    <ClInclude Include="..\Headers\Physics\Forces\MotionMode.hpp" />
+    <ClInclude Include="..\Headers\Renderer\Window.hpp" />
+    <ClInclude Include="..\Headers\SDK\Engine.hpp" />
+    <ClInclude Include="..\Headers\SDK\Miscs\Config.hpp" />
+    <ClInclude Include="..\Headers\SDK\Miscs\DrawDebugState.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\DynamicAABBTree.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\DynamicAABBTree_BP.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\IBroadPhase.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\SweepAndPrune_BP.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\CollisionInfos.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\NarrowPhases\GJK_NP.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\NarrowPhases\INarrowPhase.hpp" />
+    <ClInclude Include="..\Headers\SDK\Physics\NarrowPhases\SAT_NP.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Behaviors\PolygonMover.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Behaviors\ScrollScale.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Behaviors\TriangleSpawner.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Component.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\AABBComponent.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\BodyBase.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\DynamicBody.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\DynamicBodyColor.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\PhysicComponent.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\StaticBody.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Ortho\DebugText.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Ortho\RenderOrtho.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Ortho\RenderText.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Persp\DebugPersp.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Persp\RenderPersp.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Persp\RenderShape.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\RenderComponent.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Components\ShapeComponent.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneBigShapeComplex.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneBigShapeSimple.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneBouncingPoly.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneDebugCollision.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneCircles.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneTower.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\GameObj.hpp" />
+    <ClInclude Include="..\Headers\SDK\Scene\SceneBase.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\Infos\PhysicSystemInfos.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\Infos\RenderSystemInfos.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\Infos\SceneSystemInfos.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\InputSystem.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\PhysicSystem.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\RenderSystem.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\SceneSystem.hpp" />
+    <ClInclude Include="..\Headers\SDK\Systems\SystemBase.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Headers\Core\Pair.inl" />
+    <None Include="..\Headers\Core\Random.inl" />
+    <None Include="..\Headers\Maths\Algorithms.inl" />
+    <None Include="..\Headers\Maths\Hull.inl" />
+    <None Include="..\Headers\SDK\Scene\GameObj.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

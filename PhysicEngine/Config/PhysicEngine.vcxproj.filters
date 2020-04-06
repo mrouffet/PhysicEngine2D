@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{26a08816-1b77-423e-a98f-9aff8b169604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{3014ef2a-c888-419f-91b1-5eb362187cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Maths">
+      <UniqueIdentifier>{8bde595c-455c-4c03-9eee-3af0a928feb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Maths">
+      <UniqueIdentifier>{57c058be-06c0-4c4e-8162-ae89622352ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Maths\Shapes">
+      <UniqueIdentifier>{3295a004-e5c4-4563-b8f9-8e988e2bd15c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Maths\Shapes">
+      <UniqueIdentifier>{81423884-2976-4547-af79-150a1b510d5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{4a74e444-ceca-405d-8977-79df94d34301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Renderer">
+      <UniqueIdentifier>{9ca985bc-829b-46e2-86e0-5fb0356c30f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{1cfc761d-b8a0-4141-84f1-6087430b8e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Systems">
+      <UniqueIdentifier>{761b5575-709a-44f9-8020-3d996d150dd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{1b4e2b0f-559a-4cc9-9551-1b5a740df55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Systems">
+      <UniqueIdentifier>{5a09b39a-3e75-4368-b422-fd50f9b0adc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Systems\Infos">
+      <UniqueIdentifier>{99f1e1d7-08f4-4d32-b173-05d0ca9eeaa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Systems\Infos">
+      <UniqueIdentifier>{78137938-e9ec-4c33-92d1-32eaf930f2b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene">
+      <UniqueIdentifier>{2e693504-3db7-490e-9818-2119d4c9a803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Components">
+      <UniqueIdentifier>{9065c9c9-bc53-4d22-949f-15192b9efd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene">
+      <UniqueIdentifier>{16e69b71-31c0-4b0e-a440-f134218e0149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Components">
+      <UniqueIdentifier>{ef5bb47e-ec74-46f3-9fc0-b633bb26bfc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Physics">
+      <UniqueIdentifier>{9f8ffda9-4130-4991-91f2-653f8d551955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Components\Render">
+      <UniqueIdentifier>{760d2ae8-45e0-4869-ae29-b165dd8f7ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Components\Physics">
+      <UniqueIdentifier>{0f473f2e-d091-4fa5-b860-78dc9963e590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Components\Physics">
+      <UniqueIdentifier>{c6426098-bdfe-46ef-ad67-7b9067968ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{0f92b29e-7f76-4fb6-bace-ddf283be9e5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics\Forces">
+      <UniqueIdentifier>{a31a635e-aafe-406e-947e-03a968928755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Examples">
+      <UniqueIdentifier>{35982f3e-776e-490c-a542-c3ffa66ac054}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Examples">
+      <UniqueIdentifier>{9b2ff557-ffac-4e1d-8c40-76d59041ef6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Components\Render">
+      <UniqueIdentifier>{a9b5915c-971e-4e4c-8550-abe664a53b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Components\Behaviors">
+      <UniqueIdentifier>{a15d400c-b728-4941-be4e-98a9f22cb8ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Components\Behaviors">
+      <UniqueIdentifier>{18d27ff0-b263-4b9b-87f6-24ebd997a388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Physics\BroadPhases">
+      <UniqueIdentifier>{3d786371-449e-4756-9f63-c713594c3e51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Physics\NarrowPhases">
+      <UniqueIdentifier>{63ea9f55-a42f-497e-8f54-5fe12e2a4309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Components\Render\Ortho">
+      <UniqueIdentifier>{8ead848e-0062-48f4-9b8f-3fc473550363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Scene\Components\Render\Persp">
+      <UniqueIdentifier>{d446388d-9cf3-4619-81fe-3e106399f0b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Components\Render\Ortho">
+      <UniqueIdentifier>{ab7bcb39-4d87-4be4-96ad-0885250fee6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Scene\Components\Render\Persp">
+      <UniqueIdentifier>{df8f25e7-a909-47a9-a211-ba05886df86e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Physics">
+      <UniqueIdentifier>{572d4cb2-e2ee-453f-a06f-54842062330a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Physics\BroadPhases">
+      <UniqueIdentifier>{776f674b-d3f6-4446-8f1d-c80ea998f7e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDK\Physics\NarrowPhases">
+      <UniqueIdentifier>{d88e3334-b620-467b-ad5d-56dd77f7b3f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Miscs">
+      <UniqueIdentifier>{cefdaa9d-fd4e-4b3d-b63d-66b49e17bf54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Core\Chrono.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Vec2.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Algorithms.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Mat2.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Shapes\Shape.cpp">
+      <Filter>Source Files\Maths\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Shapes\Triangle.cpp">
+      <Filter>Source Files\Maths\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Shapes\Rectangle.cpp">
+      <Filter>Source Files\Maths\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Shapes\Square.cpp">
+      <Filter>Source Files\Maths\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Shapes\RandomShape.cpp">
+      <Filter>Source Files\Maths\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Core\Random.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\AABB.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Renderer\Window.cpp">
+      <Filter>Source Files\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\InputSystem.cpp">
+      <Filter>Source Files\SDK\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Engine.cpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\Infos\PhysicSystemInfos.cpp">
+      <Filter>Source Files\SDK\Systems\Infos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\Infos\RenderSystemInfos.cpp">
+      <Filter>Source Files\SDK\Systems\Infos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\Infos\SceneSystemInfos.cpp">
+      <Filter>Source Files\SDK\Systems\Infos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\PhysicSystem.cpp">
+      <Filter>Source Files\SDK\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\SceneBase.cpp">
+      <Filter>Source Files\SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\GameObj.cpp">
+      <Filter>Source Files\SDK\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Component.cpp">
+      <Filter>Source Files\SDK\Scene\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\RenderSystem.cpp">
+      <Filter>Source Files\SDK\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\AABBComponent.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneDebugCollision.cpp">
+      <Filter>Source Files\SDK\Scene\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Transform.cpp">
+      <Filter>Source Files\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\StaticBody.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\SceneSystem.cpp">
+      <Filter>Source Files\SDK\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\BodyBase.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\DynamicBody.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\ShapeComponent.cpp">
+      <Filter>Source Files\SDK\Scene\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Persp\DebugPersp.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Render\Persp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Persp\RenderShape.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Render\Persp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Persp\RenderPersp.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Render\Persp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Core\Debug.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Ortho\DebugText.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Render\Ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Ortho\RenderOrtho.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Render\Ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Render\Ortho\RenderText.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Render\Ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Systems\SystemBase.cpp">
+      <Filter>Source Files\SDK\Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneBouncingPoly.cpp">
+      <Filter>Source Files\SDK\Scene\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\BroadPhases\SweepAndPrune_BP.cpp">
+      <Filter>Source Files\SDK\Physics\BroadPhases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\BroadPhases\DynamicAABBTree_BP.cpp">
+      <Filter>Source Files\SDK\Physics\BroadPhases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\BroadPhases\DynamicAABBTree.cpp">
+      <Filter>Source Files\SDK\Physics\BroadPhases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Behaviors\PolygonMover.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Behaviors\TriangleSpawner.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Behaviors\ScrollScale.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\NarrowPhases\GJK_NP.cpp">
+      <Filter>Source Files\SDK\Physics\NarrowPhases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\NarrowPhases\SAT_NP.cpp">
+      <Filter>Source Files\SDK\Physics\NarrowPhases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\CollisionInfos.cpp">
+      <Filter>Source Files\SDK\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Physics\NarrowPhases\INarrowPhase.cpp">
+      <Filter>Source Files\SDK\Physics\NarrowPhases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneTower.cpp">
+      <Filter>Source Files\SDK\Scene\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneBigShapeSimple.cpp">
+      <Filter>Source Files\SDK\Scene\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneBigShapeComplex.cpp">
+      <Filter>Source Files\SDK\Scene\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\Maths\Shapes\Circle.cpp">
+      <Filter>Source Files\Maths\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Examples\SceneCircles.cpp">
+      <Filter>Source Files\SDK\Scene\Examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Sources\SDK\Scene\Components\Physics\DynamicBodyColor.cpp">
+      <Filter>Source Files\SDK\Scene\Components\Physics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Headers\Core\Color.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\FPS.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\Pair.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\Chrono.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\Key.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Vec2.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Algorithms.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Mat2.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Shapes\Shape.hpp">
+      <Filter>Header Files\Maths\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Shapes\Triangle.hpp">
+      <Filter>Header Files\Maths\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Shapes\Square.hpp">
+      <Filter>Header Files\Maths\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Shapes\Rectangle.hpp">
+      <Filter>Header Files\Maths\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Shapes\RandomShape.hpp">
+      <Filter>Header Files\Maths\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\Random.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\AABB.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Renderer\Window.hpp">
+      <Filter>Header Files\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\SystemBase.hpp">
+      <Filter>Header Files\SDK\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\InputSystem.hpp">
+      <Filter>Header Files\SDK\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Engine.hpp">
+      <Filter>Header Files\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\Config.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\RenderSystem.hpp">
+      <Filter>Header Files\SDK\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\PhysicSystem.hpp">
+      <Filter>Header Files\SDK\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\SceneSystem.hpp">
+      <Filter>Header Files\SDK\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\Infos\PhysicSystemInfos.hpp">
+      <Filter>Header Files\SDK\Systems\Infos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\Infos\RenderSystemInfos.hpp">
+      <Filter>Header Files\SDK\Systems\Infos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Systems\Infos\SceneSystemInfos.hpp">
+      <Filter>Header Files\SDK\Systems\Infos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\GameObj.hpp">
+      <Filter>Header Files\SDK\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\SceneBase.hpp">
+      <Filter>Header Files\SDK\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Component.hpp">
+      <Filter>Header Files\SDK\Scene\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\RenderComponent.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\PhysicComponent.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\ShapeComponent.hpp">
+      <Filter>Header Files\SDK\Scene\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\BodyBase.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Physics\Forces\ForceConstraints.hpp">
+      <Filter>Header Files\Physics\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Physics\Forces\ForceInfos.hpp">
+      <Filter>Header Files\Physics\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Physics\Forces\ForceMode.hpp">
+      <Filter>Header Files\Physics\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Physics\Forces\MotionMode.hpp">
+      <Filter>Header Files\Physics\Forces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\AABBComponent.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\DynamicBody.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\StaticBody.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneDebugCollision.hpp">
+      <Filter>Header Files\SDK\Scene\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Transform.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\IBroadPhase.hpp">
+      <Filter>Header Files\SDK\Physics\BroadPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\CollisionInfos.hpp">
+      <Filter>Header Files\SDK\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\NarrowPhases\INarrowPhase.hpp">
+      <Filter>Header Files\SDK\Physics\NarrowPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Persp\DebugPersp.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render\Persp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Persp\RenderShape.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render\Persp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Persp\RenderPersp.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render\Persp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Ortho\RenderOrtho.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render\Ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Core\Debug.hpp">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Ortho\DebugText.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render\Ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Render\Ortho\RenderText.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Render\Ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneBouncingPoly.hpp">
+      <Filter>Header Files\SDK\Scene\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\DynamicAABBTree_BP.hpp">
+      <Filter>Header Files\SDK\Physics\BroadPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\SweepAndPrune_BP.hpp">
+      <Filter>Header Files\SDK\Physics\BroadPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\BroadPhases\DynamicAABBTree.hpp">
+      <Filter>Header Files\SDK\Physics\BroadPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Behaviors\PolygonMover.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Behaviors\TriangleSpawner.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Behaviors\ScrollScale.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\NarrowPhases\SAT_NP.hpp">
+      <Filter>Header Files\SDK\Physics\NarrowPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Physics\NarrowPhases\GJK_NP.hpp">
+      <Filter>Header Files\SDK\Physics\NarrowPhases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Miscs\DrawDebugState.hpp">
+      <Filter>Header Files\SDK\Miscs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Hull.hpp">
+      <Filter>Header Files\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Miscs\Config.hpp">
+      <Filter>Header Files\SDK\Miscs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneTower.hpp">
+      <Filter>Header Files\SDK\Scene\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneBigShapeSimple.hpp">
+      <Filter>Header Files\SDK\Scene\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneBigShapeComplex.hpp">
+      <Filter>Header Files\SDK\Scene\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Maths\Shapes\Circle.hpp">
+      <Filter>Header Files\Maths\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Examples\SceneCircles.hpp">
+      <Filter>Header Files\SDK\Scene\Examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\SDK\Scene\Components\Physics\DynamicBodyColor.hpp">
+      <Filter>Header Files\SDK\Scene\Components\Physics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Headers\Maths\Algorithms.inl">
+      <Filter>Header Files\Maths</Filter>
+    </None>
+    <None Include="..\Headers\Core\Random.inl">
+      <Filter>Header Files\Core</Filter>
+    </None>
+    <None Include="..\Headers\SDK\Scene\GameObj.inl">
+      <Filter>Header Files\SDK\Scene</Filter>
+    </None>
+    <None Include="..\Headers\Core\Pair.inl">
+      <Filter>Header Files\Core</Filter>
+    </None>
+    <None Include="..\Headers\Maths\Hull.inl">
+      <Filter>Header Files\Maths</Filter>
+    </None>
+  </ItemGroup>
+</Project>
